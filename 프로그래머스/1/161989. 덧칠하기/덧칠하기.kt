@@ -6,10 +6,11 @@ class Solution {
     var paintStart =section[0] - 0.1
     var painted = paintStart + m
     for(i in section){
-        if (i>painted){
+        if (i > painted){
             paintStart = i -0.1
             painted = paintStart + m
             answer++
+            
         }
     }
         return answer
