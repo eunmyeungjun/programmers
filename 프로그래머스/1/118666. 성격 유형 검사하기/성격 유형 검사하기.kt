@@ -5,9 +5,10 @@ class Solution {
          "R" to 0, "T" to 0 , "C" to 0 , "F" to 0 ,
          "J" to 0, "M" to 0 , "A" to 0 , "N" to 0
      )
-
-    for (i in 0 until choices.size){
-        when(choices[i]){
+         
+         
+    for (i in 0 until choices.size) {
+        when (choices[i]) {
             1 -> score["${survey[i][0]}"] = (score["${survey[i][0]}"]!! + 3)
             2 -> score["${survey[i][0]}"] = (score["${survey[i][0]}"]!! + 2)
             3 -> score["${survey[i][0]}"] = (score["${survey[i][0]}"]!! + 1)
