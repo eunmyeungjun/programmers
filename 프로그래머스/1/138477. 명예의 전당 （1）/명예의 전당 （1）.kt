@@ -9,6 +9,7 @@ class Solution {
                 answer= answer.plus(honor.minOf{it})
             }
             else{
+                
                 if(score[i]>honor.minOf{it}){
                     honor.add(score[i])
                     honor.remove(honor.minOf{it})
