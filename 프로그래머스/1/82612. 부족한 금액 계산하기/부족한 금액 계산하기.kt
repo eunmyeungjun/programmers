@@ -1,17 +1,11 @@
 class Solution {
     fun solution(price: Int, money: Int, count: Int): Long {
-    var answer: Long = -1
-    var howMuch:Long = 0
-    for(i in 1 .. count){
-        howMuch += price * i
+        var max = 0L
+        for(i in 1 .. count) {
+            max += (price * i).toLong()
+        }
+        
+    
+        if(money >= max ) return 0 else return max - money.toLong()
     }
-
-    if(money >= howMuch){
-        answer=0
-    }else{
-       answer= howMuch-money
-    }
-
-    return answer
-}
 }
