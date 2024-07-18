@@ -3,9 +3,7 @@ class Solution {
         var answer = intArrayOf()
                 var array = arrayListOf<Int>()
         var days = arrayListOf<Int>()
-
         array = progresses.toCollection(ArrayList())
-
         for (i in 0 until array.size) {
             var day = 0
             while (array[i] < 100) {
