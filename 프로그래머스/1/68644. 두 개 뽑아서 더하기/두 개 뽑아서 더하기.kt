@@ -4,7 +4,9 @@ class Solution {
         var set=mutableSetOf<Int>()
         for(i in numbers.indices){
         for(j in i+1 until numbers.size){
+
             set.add(numbers[i]+numbers[j])
+            
         }
     }
         answer=set.sorted().toIntArray()
