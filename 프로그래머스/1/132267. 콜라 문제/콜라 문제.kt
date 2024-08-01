@@ -5,12 +5,14 @@ class Solution {
         var remain =0
         var coke =0
         while(true){
-            if(N<a){
+        
+            if(N < a){
                 break
             }
+            
             answer += (N/a)*b
-            remain = N%a
-            N=((N/a)*b)+remain
+            remain = N % a
+            N=((N/a)*b) + remain
         }
         return answer
     }
