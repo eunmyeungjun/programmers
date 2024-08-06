@@ -1,6 +1,8 @@
 class Solution {
     fun solution(s: String, n: Int): String {
+        
         val S = s.map {
+            
             when {
                 it in 'a'..'z' -> ((it.toInt() - 'a'.toInt() + n) % 26 + 
                         'a'.toInt()).toChar()
@@ -9,6 +11,7 @@ class Solution {
                 else -> it
             }
         }
+        
         return S.joinToString("")
     }
 }
