@@ -2,7 +2,6 @@ class Solution {
     fun solution(nums: IntArray): Int {
         var answer = 0
         val list = mutableListOf<Int>()
-
         for (i in 0 until nums.size-2){
             for (j in i+1 until nums.size-1){
                 for (k in j+1 until nums.size){
@@ -14,12 +13,13 @@ class Solution {
                             break
                         }
                     }
-                    if(prime && hap>1){
+                    if(prime && hap > 1){
                         list += hap
                     }
                 }
             }
         }
+        
         answer = list.size
         return answer
     }
