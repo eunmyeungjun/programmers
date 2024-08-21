@@ -17,13 +17,13 @@ class Solution {
         11 -> plus = 305 + b
         12 -> plus = 335 + b
     }
+    
     var days = plus%7
     if(days==0){
         answer += "THU"
     }else{
         answer +=day[days-1]
     }
-        
         return answer
     }
 }
