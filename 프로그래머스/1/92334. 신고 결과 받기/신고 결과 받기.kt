@@ -3,9 +3,10 @@ class Solution {
         var answer = IntArray(id_list.size){0}
     val reportSet = report.toMutableSet()
     val reportScore = mutableMapOf<String,Int>()
-    for (i in id_list){
-        reportScore[i] = 0
-    }
+    
+        for (i in id_list){
+            reportScore[i] = 0
+        }
 
     for (j in reportSet){
         val  reported = j.split(" ")[1]
