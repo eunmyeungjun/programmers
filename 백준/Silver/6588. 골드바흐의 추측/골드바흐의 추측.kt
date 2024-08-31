@@ -1,11 +1,19 @@
-fun main() = with(System.`in`.bufferedReader()) {
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
+
+
+fun main() {
+    val br = BufferedReader(InputStreamReader(System.`in`))
+    val bw = BufferedWriter(OutputStreamWriter(System.out))
 
     val isPrime = BooleanArray(1000001){true}
     isPrime[0] = false
     isPrime[1] = false
 
     var i = 2
-    while (i * i <= 1000000) {
+    while (i * i <= 1000001) {
         if (isPrime[i]) {
             for (j in i * i .. 1000000 step i) {
                 isPrime[j] = false
@@ -15,7 +23,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     }
 
     while (true) {
-        val n = readLine().toInt()
+        val n = br.readLine().toInt()
         if (n == 0) break
         var found = false
         for (a in 2..n / 2) {
@@ -32,4 +40,7 @@ fun main() = with(System.`in`.bufferedReader()) {
         }
     }
 
+    bw.flush()
+    br.close()
+    bw.close()
 }
