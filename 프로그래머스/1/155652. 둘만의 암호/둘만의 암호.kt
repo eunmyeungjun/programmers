@@ -1,6 +1,7 @@
 class Solution {
     fun solution(s: String, skip: String, index: Int): String {
         var answer: String = ""
+        
         s.forEach {
         var num = it.toInt()
         var count = 0
@@ -8,7 +9,7 @@ class Solution {
             count++
             if (num + 1 >'z'.toInt()){
                 num = 'a'.toInt()
-            }else{
+            } else {
                 num++
             }
             while (skip.contains(num.toChar())){
