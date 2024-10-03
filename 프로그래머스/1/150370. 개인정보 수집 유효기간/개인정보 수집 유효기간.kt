@@ -13,13 +13,11 @@ class Solution {
         termsMap[kind] = month.toInt() * 28
     }
 
-    for (i in 0 until privacies.size) {
-        
+    for (i in 0 until privacies.size) {        
         val (py, pm, pd, what) = privacies[i].split(".", " ")
         val pDays = (py.toInt() * 28 * 12) + (pm.toInt() * 28) + pd.toInt()
 
-        if (todayToDate >= pDays + termsMap[what]!!) {
-            
+        if (todayToDate >= pDays + termsMap[what]!!) {           
             answer += i + 1
         }
     }
