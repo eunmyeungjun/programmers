@@ -5,6 +5,7 @@ class Solution {
     var minX = 100
     var maxY = 0
     var minY = 100
+        
     for (i in 0 until wallpaper.size){
         for (j in 0 until wallpaper[i].length){
             if (wallpaper[i][j] =='#'){
