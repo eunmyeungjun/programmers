@@ -9,7 +9,6 @@ fun solution(n: Int): Long {
     for (i in 3..n){
         arr[i] = (arr[i-2] + arr[i-1]) % mod
     }
-
     answer = arr[n]   
         return answer
     }
