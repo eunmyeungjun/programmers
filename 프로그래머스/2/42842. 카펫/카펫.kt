@@ -13,6 +13,7 @@ class Solution {
                 break
             }
         }
+        
         if (full == true){
             break
         }
